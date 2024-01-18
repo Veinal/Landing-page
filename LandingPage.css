@@ -1,0 +1,114 @@
+body {
+    background-image: url(./headphones.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 6px;
+}
+
+nav img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+ul {
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
+}
+
+.navitems {
+    list-style-type: none;
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+.navitems a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-button2 {
+    background-color:  rgb(158, 31, 197);
+    color: white;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2px;
+    padding: 10px 30px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#main-body {
+    height: 100vh;
+}
+
+.title {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 125px;
+}
+
+.title h1 {
+    color: white;
+    font-size: 80px;
+    margin: 0;
+    margin-right: auto;
+}
+
+.title h2{
+    margin-right: auto;
+    color: rgb(69, 65, 65);
+}
+
+.title-button{
+    display: flex;
+    gap: 30px;
+    margin-right: auto;
+}
+
+#title-buy-now-button{
+    color: white;
+    background-color: rgb(158, 31, 197);
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bolder;
+    margin-left: 5px;
+    font-size: medium;
+    border-style: none;
+    cursor: pointer;
+}
+
+#title-products-button{
+    color: white;
+    background-color: rgb(24, 22, 22);
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+}
