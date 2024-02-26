@@ -1,5 +1,6 @@
 body {
-    background-image: url(./headphones.jpg);
+    /* background-image: url(./headphones.jpg); */
+    background-color: gold;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -25,6 +26,16 @@ nav img {
     border-radius: 50%;
     margin-left: 5%;
     margin-top: 5px;
+    animation: spin 0.5s ease-in;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 ul {
@@ -37,6 +48,16 @@ ul {
     list-style-type: none;
     font-size: 17px;
     margin-top: 2px;
+    animation: landing 0.5s ease-in;
+}
+
+@keyframes landing{
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    }
 }
 
 .navitems a{
@@ -56,10 +77,40 @@ ul {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
+    animation: slideInRight 1s ease;
+}
+
+.nav-button2:hover{
+    transform: translateY(-2px);
+}
+
+.nav-button2:active{
+    background-color: rgb(123, 30, 149);
 }
 
 #main-body {
-    height: 100vh;
+    margin-top: 30px;
+    display: flex;
+}
+
+.png-div{
+    margin-top: 15px;
+    position: relative;
+    z-index: -1;
+}
+
+#back-png{
+    width: 450px;
+    animation: slideInRight 1s ease;
+}
+
+@keyframes slideInRight{
+    from{
+        transform: translateX(500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 .title {
@@ -78,17 +129,29 @@ ul {
     font-size: 80px;
     margin: 0;
     margin-right: auto;
+    animation: slideIn 0.5s ease-in;
 }
 
 .title h2{
     margin-right: auto;
     color: rgb(69, 65, 65);
+    animation: slideIn 1s ease-in;
+}
+
+@keyframes slideIn{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
 }
 
 .title-button{
     display: flex;
     gap: 30px;
     margin-right: auto;
+    animation: slideIn 1.2s ease-in;
 }
 
 #title-buy-now-button{
@@ -101,6 +164,15 @@ ul {
     font-size: medium;
     border-style: none;
     cursor: pointer;
+    transition: all;
+}
+
+#title-buy-now-button:hover{
+    transform: translateY(-2px);
+}
+
+#title-buy-now-button:active{
+    background-color: rgb(123, 30, 149);
 }
 
 #title-products-button{
@@ -111,4 +183,12 @@ ul {
     font-weight: bolder;
     font-size: medium;
     cursor: pointer;
+}
+
+#title-products-button:hover{
+    transform: translateY(-2px);
+}
+
+#title-products-button:active{
+    background-color: rgb(44, 36, 36);
 }
